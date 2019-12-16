@@ -7,7 +7,17 @@
 </head>
 <body>
     
-    <h2>Bingo</h2>
-        
+    <h1>Bingo</h1>
+    <div class="tabel-bingo">
+    <button onclick="document.getElementById('number').innerHTML = getRndInteger(1,48)">Ridenti</button>
+    <div class="justify"><p id="number">0</p></div>
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+    <h3>Išridenti skaičiai: </h3>
+    <br><textarea style="font-size: 24px;"></textarea>
+</div>
 </body>
 </html>

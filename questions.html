@@ -6,26 +6,27 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <h1>Įvairūs klausimai</h1>
-        <div>
+    <button onclick="document.getElementById('question1').style.display='block'" >1</button>
+    <button onclick="document.getElementById('question2').style.display='block'" >2</button>
+    <button onclick="document.getElementById('question3').style.display='block'" >3</button>
+        <div id="question1" style="display: none;">
         <h3>1445 metais Maskvoje patys pradėjo skambėti varpai ir gyventojai nusprendė, 
             kad atėjo pasaulio pabaiga. Tačiau tokią „pabaigą“ dar 1091 išgyveno Kijevo, 
             1230-aisiais Vladimiro, 1626-aisiais – Solovkų gyventojai ir dar kartą 
             maskviškiai – 1802-aisiais metais. Kas iš tikro vyko?</h3>
             <button onclick="document.getElementById('answer1').style.display='block'">Atsakymas</button>
-        <h4 id="answer1" style="display: none;">Žemės drebėjimas</h4>
-        <div>
+        <button id="answer1" style="display: none;" onclick="document.getElementById('question1').style.display='none'">Žemės drebėjimas</button>
+    </div>
+        <div id="question2" style="display: none;">
             <h3>Vietiniai Mianmaro (Birmos) gyventojai augina kiaules, parduoda jas kinams,
                  o po to perka iš jų kiaulieną. Kam jie atlieka tokias nenaudingas manipuliacijas?</h3>
-            <h4 style="display: none;">Budizmas draudžia žudyti</h4>
-        </div>
-        <div>
+                 <button onclick="document.getElementById('answer2').style.display='block'">Atsakymas</button>
+            <button id="answer2" style="display: none;" onclick="document.getElementById('question2').style.display='none'">Budizmas draudžia žudyti</button></div>
+        <div id="question3" style="display: none;">
             <h3>Kasdien Žemė pasunkėja 400 tonų. Iš kur šis svoris?</h3>
-            <h4 style="display: none;">Iš kosmoso dulkių</h4>
-        </div>
-
-    </div>
-        <a href="scoore.html" style="height:15px;width:30px;">Grįžti į rezultatus</a>
+            <button onclick="document.getElementById('answer3').style.display='block'">Atsakymas</button>
+            <button id="answer3" style="display: none;" onclick="document.getElementById('question3').style.display='none'">Iš kosmoso dulkių</button></div>
+        <br><a href="index.html" style="height:15px;width:30px;">Grįžti į rezultatus</a>
 </body>
 </html>
