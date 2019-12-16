@@ -55,8 +55,10 @@ button{
     padding: 10px;
     margin: 5px;
     background-color: rgb(228, 225, 222);
-    
 }
+    .answer{
+        background-color: rgb(157, 255, 0);
+    }
 #number{
     font-size: 145px;
     font-weight: bolder;
@@ -75,4 +77,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.justify{
+    display: flex;
+    flex-direction: column;
 }
