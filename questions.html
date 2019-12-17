@@ -3,10 +3,29 @@
 <head>
     <title>Questions</title>
     <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="header">
     <h1>Įvairūs klausimai</h1>
+    <table>
+        <tr class="names">
+            <th>Elenėlė</th>
+            <th>Juozas</th>
+            <th>Tadas</th>
+            <th>Vilius</th>
+            <th>Irutė</th>
+        </tr>
+        <tr class="scoore">
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+        </tr>
+    </table></div>
+    <div class="categorees">
     <button onclick="document.getElementById('question1').style.display='block'" >1</button>
     <button onclick="document.getElementById('question2').style.display='block'" >2</button>
     <button onclick="document.getElementById('question3').style.display='block'" >3</button>
@@ -16,7 +35,7 @@
     <button onclick="document.getElementById('question7').style.display='block'" >7</button>
     <button onclick="document.getElementById('question8').style.display='block'" >8</button>
     <button onclick="document.getElementById('question9').style.display='block'" >9</button>
-    <button onclick="document.getElementById('question10').style.display='block'" >10</button>
+    <button onclick="document.getElementById('question10').style.display='block'" >10</button></div>
         <div id="question1" style="display: none;">
         <h3>1445 metais Maskvoje patys pradėjo skambėti varpai ir gyventojai nusprendė, 
             kad atėjo pasaulio pabaiga. Tačiau tokią „pabaigą“ dar 1091 išgyveno Kijevo, 
@@ -78,6 +97,5 @@
                 <button id="answer10" class="answer" style="display: none;" onclick="document.getElementById('question10').style.display='none'">
                 Škotijos</button></div>
 
-        <br><a href="index.html" style="height:15px;width:30px;">Grįžti į rezultatus</a>
 </body>
 </html>

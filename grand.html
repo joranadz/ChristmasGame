@@ -3,21 +3,37 @@
 <head>
     <title>grandinele</title>
     <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>    
     <h1>Grandinėlė</h1>
-    <div class="justify" >
-        <button>Valstybė iš kurios kilęs B.Obamos tėvas</button>
-        <h3>Kenija</h3>
-        <button>Valstybė turinti daugiausiai gyventoju</button>
-        <h3>Kinija</h3>
-        <button>Lietuvos upė</button>
-        <h3>Minija</h3>
-        <button>Tiesus ar kreivas brūkšnys</button>
-        <h3>Linija</h3>
+    <button onclick="document.getElementById('grand1').style.display='flex'">1</button>
+    <button onclick="document.getElementById('grand2').style.display='flex'">2</button>
+    <div class="justify" id="grand1" style="display: none;">
+        <button onclick="document.getElementById('grandAnswera1').style.display='flex'"
+        >Valstybė iš kurios kilęs B.Obamos tėvas</button>
+        <h3 id="grandAnswera1" style="display: none;">Kenija</h3>
+        <button onclick="document.getElementById('grandAnswera2').style.display='flex'"
+        >Valstybė turinti daugiausiai gyventoju</button>
+        <h3 id="grandAnswera2" style="display: none;">Kinija</h3>
+        <button onclick="document.getElementById('grandAnswera3').style.display='flex'"
+        >Lietuvos upė</button>
+        <h3 id="grandAnswera3" style="display: none;">Minija</h3>
+        <button onclick="document.getElementById('grandAnswera4').style.display='flex'"
+        >Tiesus ar kreivas brūkšnys</button>
+        <h3 id="grandAnswera4" style="display: none;">Linija</h3>
     </div>
-    
+    <div class="justify" id="grand2" style="display: none;" >
+        <button onclick="document.getElementById('grandAnswerb1').style.display='flex'">Artimųjų rytų valstybė</button>
+        <h3 id="grandAnswerb1" style="display: none;">Iranas</h3>
+        <button onclick="document.getElementById('grandAnswerb2').style.display='flex'">Planeta</button>
+        <h3 id="grandAnswerb2" style="display: none;">Uranas</h3>
+        <button onclick="document.getElementById('grandAnswerb3').style.display='flex'">Žemi Europos kalnai</button>
+        <h3 id="grandAnswerb3" style="display: none;">Uralas</h3>
+        <button onclick="document.getElementById('grandAnswerb4').style.display='flex'">Ežeras</button>
+        <h3 id="grandAnswerb4" style="display: none;">Aralas</h3>
+    </div>
     
 </body>
 </html>
